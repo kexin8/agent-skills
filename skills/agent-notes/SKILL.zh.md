@@ -19,6 +19,8 @@ python3 <skill-directory>/scripts/bootstrap.py <repository-root>
 
 创建或修改 Note 前，阅读 [references/convention.md](references/convention.md)。该文件是分类、文件格式和生命周期迁移规则的事实来源。
 
+每个 Note 都必须是同步维护的双语文件对：`yyyy-mm-dd-topic-title.md` 是英文事实来源，`yyyy-mm-dd-topic-title.zh.md` 是对应的中文版本。创建、更新、移动和验证时必须同时处理两个文件。
+
 ## 判断是否需要 Note
 
 当工作涉及架构、公共 API 或协议、跨模块职责、持久化、安全、基础设施、测试策略或重要工程流程，并作出需要长期遵循的选择时，创建或更新 Note。

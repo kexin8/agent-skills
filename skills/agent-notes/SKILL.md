@@ -19,6 +19,8 @@ Review the generated files before continuing. The bootstrap is additive: it refu
 
 Read [references/convention.md](references/convention.md) before creating or changing a Note. It is the source of truth for classification, file format, and lifecycle transitions.
 
+Every Note is a synchronized bilingual pair: `yyyy-mm-dd-topic-title.md` is the English source of truth and `yyyy-mm-dd-topic-title.zh.md` is its Chinese counterpart. Create, update, move, and validate both files together.
+
 ## Decide whether a Note is warranted
 
 Create or update a Note when the work makes a durable choice involving architecture, public API or protocol, cross-module ownership, persistence, security, infrastructure, testing strategy, or an important engineering workflow.

@@ -8,7 +8,14 @@ Use:
 
 ```text
 .agents/notes/<lifecycle>/<class>/yyyy-mm-dd-topic-title.md
+.agents/notes/<lifecycle>/<class>/yyyy-mm-dd-topic-title.zh.md
 ```
+
+Every Note is a bilingual pair. The unsuffixed English file is the AI-facing
+source of truth; the `.zh.md` file is the Chinese human-readable version. Both
+files share the same lifecycle and class and must be created, updated, moved,
+rejected, archived, and validated together with semantically synchronized
+status, decisions, consequences, verification, links, and implementation facts.
 
 The date is when the topic was first proposed and does not change during moves. Use lowercase kebab-case for the topic title.
 

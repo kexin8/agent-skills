@@ -1,13 +1,13 @@
 # Agent Notes Skill
 
-用于让 Coding Agent 在非简单工程变更中自动创建和维护 `.agents/notes` 决策记录。
+让 Coding Agent 在非简单工程变更中创建和维护 `.agents/notes` 双语决策记录。每个 Note 由英文 `xxx.md` 和中文 `xxx.zh.md` 组成，并同步维护。
 
 ## 安装
 
 以下命令均在本 skills 仓库根目录执行：
 
 ```bash
-cd /Users/zhengzi/Project/zhengzi/skills
+cd <skills-repository>
 ```
 
 ### 安装到当前用户
@@ -22,7 +22,7 @@ make install NAME=agent-notes
 
 ```text
 ~/.agents/skills/agent-notes
-  → /Users/zhengzi/Project/zhengzi/skills/skills/agent-notes
+  → <skills-repository>/skills/agent-notes
 ```
 
 ### 仅安装到指定项目
@@ -33,14 +33,6 @@ make install NAME=agent-notes
 make install \
   NAME=agent-notes \
   SKILLS_HOME=<project-root>/.agents/skills
-```
-
-例如：
-
-```bash
-make install \
-  NAME=agent-notes \
-  SKILLS_HOME=/Users/zhengzi/Project/my-app/.agents/skills
 ```
 
 该命令创建指向本仓库 skill 源目录的符号链接；在本仓库更新 skill 后，无需重复安装。
@@ -57,7 +49,7 @@ python3 skills/agent-notes/scripts/bootstrap.py <project-root>
 
 ```bash
 python3 \
-  /Users/zhengzi/Project/zhengzi/skills/skills/agent-notes/scripts/bootstrap.py \
+  <skills-repository>/skills/agent-notes/scripts/bootstrap.py \
   <project-root>
 ```
 
@@ -82,7 +74,7 @@ python3 skills/agent-notes/scripts/validate.py <project-root>
 
 ```bash
 python3 \
-  /Users/zhengzi/Project/zhengzi/skills/skills/agent-notes/scripts/validate.py \
+  <skills-repository>/skills/agent-notes/scripts/validate.py \
   <project-root>
 ```
 

@@ -29,7 +29,9 @@ Use the `agent-notes` skill for the format, lifecycle workflow, and validation.
 
 README = """# Agent Notes
 
-Notes live at `<lifecycle>/<class>/yyyy-mm-dd-topic-title.md`.
+Each Note is a synchronized bilingual pair:
+`<lifecycle>/<class>/yyyy-mm-dd-topic-title.md` and
+`<lifecycle>/<class>/yyyy-mm-dd-topic-title.zh.md`.
 
 Lifecycles are `proposed`, `implemented`, `rejected`, and `archived`. Classes are
 `feature`, `bug-fix`, `simplification`, `architecture`, `process`, and `testing`.
