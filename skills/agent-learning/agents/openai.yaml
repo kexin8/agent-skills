@@ -1,4 +1,4 @@
 interface:
   display_name: "Agent Learning"
   short_description: "Review agent mistakes and propose durable fixes"
-  default_prompt: "Use $agent-learning to review what caused rework in this session and propose any project rules for my approval."
+  default_prompt: "Use $agent-learning to give me copy-ready Agent improvement and project convention drafts from this session."
