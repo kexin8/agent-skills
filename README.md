@@ -1,8 +1,29 @@
-# Personal AI Skills
+# Agent Skills
+
+[![skills.sh](https://skills.sh/b/kexin8/agent-skills)](https://skills.sh/kexin8/agent-skills)
 
 这个仓库用于维护个人可复用的 AI skills。每个 skill 都是一个独立目录，入口文件为 `SKILL.md`。
 
-## 快速开始
+Reusable agent skills for Claude Code, Codex, OpenCode, Cursor, and other agents that support the `SKILL.md` format.
+
+## 安装（用户）
+
+通过 [skills.sh](https://skills.sh/kexin8/agent-skills) CLI 安装，无需克隆仓库：
+
+```bash
+# 查看仓库内可安装的 skills
+npx skills add kexin8/agent-skills --list
+
+# 安装指定 skill
+npx skills add kexin8/agent-skills --skill ask
+
+# 安装全部 skills（默认装到当前项目，加 -g 装到用户目录）
+npx skills add kexin8/agent-skills --all
+```
+
+首次出现同名 skill 冲突时，用 `--rename <new-name>` 换名安装。
+
+## 快速开始（维护者）
 
 ```bash
 make new NAME=my-skill
@@ -12,7 +33,7 @@ make install NAME=my-skill
 
 创建后，编辑 `skills/my-skill/SKILL.md`，删除无用说明，并只在确有需要时添加 `scripts/`、`references/` 或 `assets/`。
 
-## 安装到 skills.sh 目录
+## 本地 symlink 安装（开发用）
 
 默认将 skill 以符号链接安装到 `~/.agents/skills`，仓库仍是唯一内容来源：
 
